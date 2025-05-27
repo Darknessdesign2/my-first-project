@@ -5,15 +5,14 @@ body{
 
 #logo{
     height: 50px;
-    position: fixed;
+    position: absolute;
     transform: translateY(20px);
 }
 #controller{
     height: 400px;
-    position: fixed;
+    position: absolute;
     top: 300px;
     left: 200px;
-    margin: ;
     
 }
 
@@ -39,7 +38,7 @@ body{
     transform: translateX(200px);
     align-items: center;
     column-gap: 10px;
-    position: fixed;
+    position: absolute;
     bottom: -10px;
     right: 564px;
     border: none;
@@ -69,7 +68,7 @@ body{
 
 .color-options{
     margin: 20px 0;
-    position: fixed;
+    position: absolute;
     bottom: 90px;
     right: 550px;
     
@@ -206,10 +205,45 @@ input[type="number"]{
     width: 100px;}
 
 #quantity{
-    position: fixed;
+    position: absolute;
     right: 570px;
     bottom: 80px;
     background-color: #bfffcc;
     color: rgb(0, 0, 0);
+    transform: translate(290px, 40px);
 }
 
+
+.section1{
+  position: absolute;
+  background-color: #f0f0f0;
+    width: 100%;
+  padding: 40px;
+  height: 100vh;
+}
+
+body, html {
+  overflow-y: auto;
+}
+
+#sectiontitle{
+    position: absolute;
+    transform: translateX(110vh);
+}
+
+#xboxcontroller2{
+    height: 300px;
+    border-radius: 20px;
+}
+
+#paragraph2{
+    transform: translateY(50px);
+    float: right;
+    margin-right: 110px;
+    font-size: 22px;
+    width: 600px;
+}
+
+#second{
+    padding-top: 100px;
+}
