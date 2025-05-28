@@ -1,3 +1,7 @@
+input[type="radio"] {
+    display: none;
+}
+
 body{
     font-family: Noto Sans;
 
@@ -8,40 +12,33 @@ body{
     position: absolute;
     transform: translateY(20px);
 }
-#controller{
-    height: 400px;
-    position: absolute;
-    top: 300px;
-    left: 200px;
-    
-}
+
 
 #title{
-    float: right;
-    padding-right: 240px;
-    padding-top: 130px;
-
-    font-family: 'Poppins';
+  text-align: right;
+  right: 140px;
+  top: 150px;
+  font-family: 'Poppins';
+  position: absolute;
 }
 
 #paragraph{
-    float: right;
-    padding-right: 300px;
-    width: 600px;
-    transform: translate(200px, -20px);
-    text-align: left;
+  position: absolute;
+  right: 20px;
+  top: 200px;
+  width: 600px;
+  text-align: center;
 }
 
 .container{
-    display: flex;
-    flex-direction: row;
-    transform: translateX(200px);
-    align-items: center;
-    column-gap: 10px;
-    position: absolute;
-    bottom: -10px;
-    right: 564px;
-    border: none;
+position: absolute;
+bottom: 100px;
+right: 300px;
+display: flex;
+flex-direction: row;
+align-items: center;
+column-gap: 10px;
+    
 }
 
 #price{
@@ -58,6 +55,13 @@ body{
     border-radius: 10px;
 }
 
+#quantity{
+    position: absolute;
+    margin-bottom: 55px;
+    left: 80px;
+    
+}
+
 .fa-solid.fa-cart-shopping{
     color: rgb(202, 202, 202);
 }
@@ -69,39 +73,69 @@ body{
 .color-options{
     margin: 20px 0;
     position: absolute;
-    bottom: 90px;
+    top: 100px;
     right: 550px;
     
 }
 
+.color-selector{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 20px 0;
+    position: absolute;
+    top: 385px;
+    right: 320px;
+}
+
+.color-circle:hover{
+    transform: scale(1.1);
+}
 .color-circle{
     display: inline-block;
     width: 25px;
     height: 25px;
     border-radius: 50%;
-    margin-right: 10px;
-    border: 2px solid #000000;
+    border: 2px solid #000;
     cursor: pointer;
+    margin: 5px;
+    transition: transform 0.2s;
 }
 
 .black{background-color: black;}
-.black:hover{
-    box-shadow: 1px 2px 10px black;
-    height: 26px;
+.red{background-color: red;}
+.green{background-color: green;}
+
+.controller-image{
+height: 400px;
+background-size: contain;
+background-repeat: no-repeat;
+background-position: center;
+margin-top: 20px;
+aspect-ratio: 3/2;
+z-index: 1;
+transform: translate(-220px, 100px);
+background-image: url(Xbox\ Controller.png);
+
 }
 
-
-.red{background-color: red; border: 2 px solid #999;}
-.red:hover{
-    box-shadow: 1px 2px 10px red;
-    height: 26px;
+.controller-wrapper{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
+#red:checked ~ .controller-image{
+    background-image: url(Xbox\ controller\ red.png);
+}
 
-.green{background-color: rgb(0, 88, 0);}
-.green:hover{
-    box-shadow: 1px 2px 10px green;
-    height: 26px;
+#green:checked ~ .controller-image{
+    background-image: url("Xbox\ controller\ green.png");
+}
+
+#black:checked ~ .controller-image{
+    background-image: url(Xbox\ Controller.png);
 }
 
 #menu{
@@ -164,6 +198,10 @@ body{
 
 }
 
+.dropdown{
+    position: absolute;
+    top: 10px;
+}
 
 .dropdown button{
     background-color: green;
@@ -171,7 +209,11 @@ body{
     padding: 10px 15px;
     border: none;
     cursor: pointer;
+   position: absolute;
+    width: 110px;
+   
 }
+
 
 .dropdown a{
     display: block;
@@ -247,3 +289,6 @@ body, html {
 #second{
     padding-top: 100px;
 }
+
+
+

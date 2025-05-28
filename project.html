@@ -15,7 +15,6 @@
 <body>
     
     <img src="Xbox LOGO.png" alt="" id="logo">
-    <img src="Xbox Controller.png" alt="" id="controller">
     <h1 id="title">Xbox Series X controller</h1>
     <p id="paragraph">Απόλαυσε τον απόλυτο έλεγχο με το Xbox Series Controller, το πιο εξελιγμένο ασύρματο χειριστήριο που σχεδιάστηκε ποτέ από τη Microsoft. Με ανανεωμένη εργονομία, textures grips για σταθερό κράτημα και βελτιστοποιημένη απόκριση, σου χαρίζει απίστευτη ακρίβεια και άνεση ακόμα και στις πιο απαιτητικές gaming συνεδρίες. Υποστηρίζει άψογα Xbox Series X|S, Xbox One, PC, Android και IOS, ενώ η νέα λειτουργία Share σου επιτρέπει να αποθηκεύεις και να μοιράζεσαι άμεσα τις καλύτερες στιγμές του παιχνιδιού. Είναι ο ιδανικός σύντροφος για κάθε gamer που δεν συμβιβάζεται με τίποτα λιγότερο από την κορυφή.</p>
     
@@ -23,14 +22,23 @@
         <h3 id="price">69,99€</h3>
         <a href=""><button id="cart">ADD TO CART <i class="fa-solid fa-cart-shopping"></i></button></a>
     </div>
-<div class="color-options">
-    <p>Χρώματα</p>
-    <div class="color-circle black"></div>
-    <div class="color-circle red"></div>
-    <div class="color-circle green"></div>
+<div class="controller-wrapper">
+
+    <input type="radio" name="color" id="black" checked>
+    <input type="radio" name="color" id="red">
+    <input type="radio" name="color" id="green">
+
+    <div class="color-selector">
+        <label for="black" class="color-circle black"></label>
+        <label for="red" class="color-circle red"></label>
+        <label for="green" class="color-circle green"></label>
+    </div>
+
+    <div class="controller-image"></div>
 </div>
 
-    <div class="dropdown">
+
+        <div class="dropdown">
         <button>ΔΕΣ ΕΠΙΣΗΣ</button>
         <div class="content">
             <a href="https://www.xbox.com/el-GR/xbox-game-pass">Gamepass</a>
@@ -51,14 +59,11 @@
 
 
 
-<div style="height: 100vh;"></div>
+     <div id="second"></div>
 <section class="section1">
     
     
     
-    <div id="second"></div>
-    <div id="second"></div>
-    <div id="second"></div>
     <div id="second"></div>
     <h1 id="sectiontitle">Εργονομικός Σχεδιασμός</h1>
     <img src="Xbox controller.jpg" alt="" id="xboxcontroller2">
@@ -90,4 +95,3 @@
 </section>
 </body>
 </html>
-    
